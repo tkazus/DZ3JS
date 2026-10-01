@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 1 -->
+    <h1>Основы jQuery</h1>
+
+    <h2>Изменение заголовка и абзаца</h2>
+    <h3 id="task1-title">Старый заголовок</h3>
+    <p id="task1-paragraph">Старый текст абзаца.</p>
+    <button id="task1-btn">Изменить текст</button>
+
+    <hr>
+
+    <h2>Приветствие по имени</h2>
+    <input type="text" id="name-input" placeholder="Введите имя">
+    <button id="name-btn">Поздороваться</button>
+    <p id="greeting"></p>
+
+    <hr>
+
+    <h2>Три блока с разными классами</h2>
+    <div class="block block-red">Блок 1 — красный текст</div>
+    <div class="block block-blue">Блок 2 — синий текст</div>
+    <div class="block block-green">Блок 3 — зелёный текст</div>
+
+    <hr>
+
+    <h2>Карточка студента</h2>
+    <input type="text" id="s-name" placeholder="Имя">
+    <input type="number" id="s-age" placeholder="Возраст">
+    <input type="text" id="s-group" placeholder="Группа">
+    <input type="number" id="s-score" step="0.1" placeholder="Средний балл">
+    <button id="s-btn">Заполнить карточку</button>
+
+    <div id="student-card" class="card">
+        <p><strong>Имя:</strong> <span id="card-name">—</span></p>
+        <p><strong>Возраст:</strong> <span id="card-age">—</span></p>
+        <p><strong>Группа:</strong> <span id="card-group">—</span></p>
+        <p><strong>Средний балл:</strong> <span id="card-score">—</span></p>
+    </div>
+
+    <hr>
+
+    <h2>Анкета студента со статусом</h2>
+    <input type="text" id="a-name" placeholder="Имя">
+    <input type="number" id="a-age" placeholder="Возраст">
+    <input type="number" id="a-score" step="0.1" placeholder="Средний балл">
+    <button id="a-btn">Показать карточку</button>
+
+    <div id="anketa-card" class="card">
+        <p><strong>Имя:</strong> <span id="anketa-name">—</span></p>
+        <p><strong>Возраст:</strong> <span id="anketa-age">—</span></p>
+        <p><strong>Средний балл:</strong> <span id="anketa-score">—</span></p>
+        <p><strong>Статус:</strong> <span id="anketa-status">—</span></p>
+    </div>
+
+    <hr><hr>
+
+<!-- 2 -->
+    <h1>jQuery: события, классы и эффекты</h1>
+
+    <h2>Показать/скрыть информацию</h2>
+    <button id="toggle-info-btn">Показать/скрыть информацию</button>
+    <div id="info-block" class="info">
+        Это дополнительная информация, которая появляется и исчезает.
+    </div>
+
+    <hr>
+
+    <h2>Изменение оформления карточки</h2>
+    <div id="style-card" class="card">
+        <p>Карточка студента</p>
+        <p>Иван Иванов, группа ИС-21</p>
+    </div>
+    <button id="style-btn">Изменить оформление</button>
+
+    <hr>
+
+    <h2>Дополнительная информация</h2>
+    <button id="more-btn">Подробнее</button>
+    <div id="more-info" class="info">
+        Здесь подробная информация о студенте: достижения, курсы, проекты.
+    </div>
+
+    <hr>
+
+    <h2>Поиск студента</h2>
+    <input type="text" id="search-input" placeholder="Введите имя">
+    <p id="search-result">Введите имя</p>
+
+    <hr>
+
+    <h2>Список студентов</h2>
+    <form id="student-form">
+        <input type="text" id="f-name" placeholder="Имя" required>
+        <input type="number" id="f-age" placeholder="Возраст" required>
+        <input type="number" id="f-score" step="0.1" placeholder="Средний балл" required>
+        <button type="submit">Добавить студента</button>
+    </form>
+
+    <button id="toggle-list-btn">Показать/скрыть список</button>
+
+    <div id="students-list"></div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
